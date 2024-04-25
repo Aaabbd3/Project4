@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | Project 2</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -51,13 +51,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Downloads.loader.js";
+      var loaderUrl = "/Downloads.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Downloads.data.br",
-        frameworkUrl: buildUrl + "/Downloads.framework.js.br",
-        codeUrl: buildUrl + "/Downloads.wasm.br",
+        dataUrl: "/Downloads.data.br",
+        frameworkUrl: "/Downloads.framework.js.br",
+        codeUrl: "/Downloads.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Project 2",
